@@ -1,5 +1,6 @@
 //recursive fibonacci
-//time complexity - 2^n
+//time complexity - O(2^n)
+//space: O(n)
 
 const fib = (n) => {
     if (n <= 2) return 1; //base case 2 or 1
