@@ -6,3 +6,5 @@
 
 //write a function gridtraveler(m,n) that calculates this
 //gridTraveler(2,3) -> 3
+
+//gridTraveler(3,3) -> ?
