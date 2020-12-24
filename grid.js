@@ -8,3 +8,18 @@
 //gridTraveler(2,3) -> 3
 
 //gridTraveler(3,3) -> ?
+
+//recursive
+const gridTraveler = (m,n, memo = {}) => {
+    const key = m + "," + n;
+    if (key in memo) return memo[key]; //checks if key exists in memo
+    if (m === 1 && n === 1) return 1; //base
+    if (m === 1 || n === 1) return 0; //base
+    memo[key] = gridTraveler(m - 1, n, memo) + gridTraveler(m, n - 1, memo); 
+    return memo[key];
+};
+
+console.log(gridTraveler(1, 1));
+console.log(gridTraveler(5, 7));
+console.log(gridTraveler(3, 2));
+console.log(gridTraveler(18, 18));
