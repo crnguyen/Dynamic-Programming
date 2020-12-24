@@ -23,3 +23,7 @@ console.log(gridTraveler(1, 1));
 console.log(gridTraveler(5, 7));
 console.log(gridTraveler(3, 2));
 console.log(gridTraveler(18, 18));
+
+//total possible number of nodes = m * n 
+//time complexity = O(m * n)
+//space complexity = O(m + n)
