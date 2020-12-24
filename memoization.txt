@@ -1,0 +1,14 @@
+Solving Dynamic Programming problems using Memoization
+
+1. make it work
+- visualize the problem as a tree
+- implement that tree using recursion
+- test it
+
+2. make it efficient
+- add a memo object 
+(memo object needs to have keys and values)
+    keys = arguments to our function
+    values = return values for function calls
+- add a base case to return memo values that captures the memos (basically looking up some stored value within the memo)
+- store return values into the memo
